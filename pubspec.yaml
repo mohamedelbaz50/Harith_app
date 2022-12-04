@@ -80,7 +80,13 @@ flutter:
   fonts:
     - family: Droid Arabic
       fonts:
-        - asset: assets/fonts/Droid Arabic Kufi Regular.ttf
+        - asset: assets/fonts/ArbFONTS-Droid Arabic Kufi Bold.ttf
+        - asset: assets/fonts/ArbFONTS-Droid Arabic Kufi.ttf
+        - asset: assets/fonts/ArbFONTS-Droid-Arabic-Kufi-Bold.ttf
+        - asset: assets/fonts/ArbFONTS-Droid-Arabic-Kufi.ttf
+        - asset: assets/fonts/ArbFONTS-Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR_.ttf
+        - asset: assets/fonts/ArbFONTS-Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+        - asset: assets/fonts/ArbFONTS-DroidKufi-Regular.ttf
         
   #   - family: Trajan Pro
   #     fonts:
