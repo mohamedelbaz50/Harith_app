@@ -15,6 +15,7 @@ ThemeData lightTheme = ThemeData(
     primaryColor: HexColor("#27AE61"),
     fontFamily: "Droid Arabic",
     textTheme: TextTheme(
+        bodyText2: TextStyle(fontSize: 12.sp, color: Colors.grey),
         bodyText1: TextStyle(
             fontSize: 12.sp,
             fontWeight: FontWeight.bold,

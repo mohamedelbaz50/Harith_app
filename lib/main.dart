@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
+            builder: (context, child) {
+              return Directionality(
+                  textDirection: TextDirection.rtl, child: child!);
+            },
             theme: lightTheme,
             home: LoginScreen(),
           );
