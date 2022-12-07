@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:harith_app/Features/Auth/Presentation/Widgets/build_login_method.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/default_button.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/default_form_field.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class LoginScreen extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
@@ -35,7 +37,8 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       Text(
                         "الايميل او رقم الهاتف",
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                            color: Colors.black, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(
                         height: 10,
@@ -52,7 +55,8 @@ class LoginScreen extends StatelessWidget {
                       ),
                       Text(
                         "كلمة المرور",
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                            color: Colors.black, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(
                         height: 10,
@@ -62,7 +66,7 @@ class LoginScreen extends StatelessWidget {
                           prefixIcon: Icons.lock,
                           height: height,
                           controller: passwordController,
-                          inputType: TextInputType.text,
+                          inputType: TextInputType.visiblePassword,
                           hintText: "ادخل كلمة المرور هنا"),
                       Row(
                         children: [
@@ -96,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                           color: Theme.of(context).primaryColor,
                           text: "تسجيل الدخول"),
                       SizedBox(
-                        height: 70.h,
+                        height: 55.h,
                       ),
                       Row(
                         children: [
@@ -106,7 +110,7 @@ class LoginScreen extends StatelessWidget {
                             height: 1,
                             color: Colors.grey,
                           )),
-                          Text("او اكمل باستخدام"),
+                          const Text("او اكمل باستخدام"),
                           Expanded(
                               child: Container(
                             margin: const EdgeInsets.all(5),
@@ -114,6 +118,55 @@ class LoginScreen extends StatelessWidget {
                             color: Colors.grey,
                           )),
                         ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          buildLoginMethod(
+                              onPressed: () {},
+                              context: context,
+                              backgroundColor: Theme.of(context)
+                                  .primaryColor
+                                  .withOpacity(0.1),
+                              image: "assets/images/login_methods/Asset 3.png",
+                              methodName: "جوجل"),
+                          buildLoginMethod(
+                              onPressed: () {},
+                              context: context,
+                              backgroundColor: Theme.of(context)
+                                  .primaryColor
+                                  .withOpacity(0.1),
+                              image: "assets/images/login_methods/Asset 1.png",
+                              methodName: "البصمه"),
+                          buildLoginMethod(
+                              onPressed: () {},
+                              context: context,
+                              backgroundColor: Theme.of(context)
+                                  .primaryColor
+                                  .withOpacity(0.1),
+                              image: "assets/images/login_methods/Asset 2.png",
+                              methodName: "فيسبوك"),
+                        ],
+                      ),
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("اذا كنت تستخدم التطبيق لأول مرة",
+                                style: Theme.of(context).textTheme.bodyText1),
+                            TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "سجل الان",
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyText1!
+                                      .copyWith(
+                                          color: Theme.of(context).primaryColor,
+                                          decoration: TextDecoration.underline),
+                                ))
+                          ],
+                        ),
                       )
                     ],
                   )
