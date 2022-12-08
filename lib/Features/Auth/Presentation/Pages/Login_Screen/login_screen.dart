@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/build_login_method.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/default_button.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/default_form_field.dart';
-import 'package:hexcolor/hexcolor.dart';
+
+import '../../Widgets/navigate_methods.dart';
+import '../Register_Screen/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
@@ -155,7 +157,11 @@ class LoginScreen extends StatelessWidget {
                             Text("اذا كنت تستخدم التطبيق لأول مرة",
                                 style: Theme.of(context).textTheme.bodyText1),
                             TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  navigateTo(
+                                      context: context,
+                                      widget: RegisterScreen());
+                                },
                                 child: Text(
                                   "سجل الان",
                                   style: Theme.of(context)

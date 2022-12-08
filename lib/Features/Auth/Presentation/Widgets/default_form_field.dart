@@ -15,8 +15,12 @@ Widget defaultFormField(
       keyboardType: inputType,
       decoration: InputDecoration(
           prefixIcon: Icon(prefixIcon),
+          focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Theme.of(context).primaryColor)),
           border: OutlineInputBorder(
-              borderSide: BorderSide(color: HexColor("#707070B3"))),
+              borderSide: BorderSide(
+            color: HexColor("#707070B3"),
+          )),
           hintText: hintText,
           hintStyle: Theme.of(context).textTheme.bodyText2),
     ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:harith_app/Features/Auth/Presentation/Pages/Register_Screen/register_screen.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/in_welcome_button.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 import '../../Widgets/navigate_methods.dart';
 import '../Login_Screen/login_screen.dart';
@@ -25,7 +25,9 @@ class WelcomeInHarithScreeen extends StatelessWidget {
             Row(
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    navigateTo(context: context, widget: LoginScreen());
+                  },
                   child: Container(
                     width: 67.w,
                     height: 22.h,
@@ -80,7 +82,9 @@ class WelcomeInHarithScreeen extends StatelessWidget {
                       height: 50.h,
                       color: Colors.grey.withOpacity(0.4),
                       fontColor: Colors.black,
-                      onPressed: () {},
+                      onPressed: () {
+                        navigateTo(context: context, widget: RegisterScreen());
+                      },
                       text: " انشاء حساب جديد"),
                 ],
               ),
