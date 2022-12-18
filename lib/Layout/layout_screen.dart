@@ -52,7 +52,7 @@ class LayoutScreen extends StatelessWidget {
                         BottomNavigationBarItem(
                             icon: Icon(Icons.home), label: "الرئيسيه"),
                         BottomNavigationBarItem(
-                            icon: Icon(Icons.wallet_rounded), label: "محفظتك"),
+                            icon: Icon(Icons.wallet), label: "محفظتك"),
                         BottomNavigationBarItem(
                             icon: Icon(Icons.calendar_month), label: "نوته"),
                         BottomNavigationBarItem(

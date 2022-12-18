@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:harith_app/Layout/widgets/build_service_item.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -14,12 +14,90 @@ class MainScreen extends StatelessWidget {
         children: [
           Center(
             child: Container(
+              padding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 15.w),
               margin: EdgeInsets.symmetric(vertical: 10.h),
               width: 294.w,
-              height: 130.h,
+              height: 138.h,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(26),
                   color: Theme.of(context).primaryColor),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "حسابى",
+                    style: Theme.of(context)
+                        .textTheme
+                        .caption!
+                        .copyWith(color: Colors.white, fontSize: 10.sp),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "135645756876956",
+                        style: Theme.of(context)
+                            .textTheme
+                            .caption!
+                            .copyWith(color: Colors.white, fontSize: 15.sp),
+                      ),
+                      IconButton(
+                        icon: const Icon(
+                          Icons.copy,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {},
+                      )
+                    ],
+                  ),
+                  Text(
+                    "المبلغ الكلى",
+                    style: Theme.of(context)
+                        .textTheme
+                        .caption!
+                        .copyWith(color: Colors.white, fontSize: 10.sp),
+                  ),
+                  Row(
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            "135645",
+                            style: Theme.of(context)
+                                .textTheme
+                                .caption!
+                                .copyWith(color: Colors.white, fontSize: 20.sp),
+                          ),
+                          SizedBox(
+                            width: 10.w,
+                          ),
+                          Text(
+                            "جنيه مصرى",
+                            style: Theme.of(context)
+                                .textTheme
+                                .caption!
+                                .copyWith(color: Colors.white, fontSize: 10.sp),
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Container(
+                          padding: EdgeInsets.all(4.h),
+                          width: 35.w,
+                          height: 30.h,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(7),
+                            color: Colors.white.withOpacity(0.3),
+                          ),
+                          child: const Image(
+                              image: AssetImage("assets/images/pie-chart.png")),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Text(
@@ -27,6 +105,50 @@ class MainScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.normal,
                 ),
+          ),
+          SizedBox(
+            height: 5.h,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا")
+            ],
+          ),
+          SizedBox(
+            height: 5.h,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+              buildServiceItem(
+                  context: context,
+                  image: "assets/images/pie-chart.png",
+                  serviceName: "يابيايبا"),
+            ],
           )
         ],
       ),
