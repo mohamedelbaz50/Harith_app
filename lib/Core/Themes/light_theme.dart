@@ -24,4 +24,19 @@ ThemeData lightTheme = ThemeData(
         headline1: TextStyle(
             fontSize: 22.sp,
             fontWeight: FontWeight.bold,
-            color: HexColor("#132033"))));
+            color: HexColor("#132033")),
+        headline4: TextStyle(
+            fontSize: 18.sp,
+            fontWeight: FontWeight.bold,
+            color: HexColor("#132033"))),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        selectedItemColor: HexColor("#27AE61"),
+        selectedIconTheme: IconThemeData(size: 26.sp),
+        unselectedIconTheme: IconThemeData(size: 25.sp),
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: true,
+        selectedLabelStyle:
+            TextStyle(color: HexColor("#27AE61"), fontSize: 12.sp),
+        unselectedLabelStyle: TextStyle(color: Colors.grey, fontSize: 10.sp)));

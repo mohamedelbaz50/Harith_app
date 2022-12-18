@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:harith_app/Core/Themes/light_theme.dart';
 import 'package:harith_app/Features/Auth/Presentation/Pages/Login_Screen/login_screen.dart';
+import 'package:harith_app/Features/Auth/Presentation/Pages/Splash_screen/splash_screen.dart';
 import 'package:harith_app/Features/Auth/Presentation/Pages/Welcome_in_Harith_screen/welcome_in_harith_screen.dart';
+
+import 'Layout/layout_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
                   textDirection: TextDirection.rtl, child: child!);
             },
             theme: lightTheme,
-            home: WelcomeInHarithScreeen(),
+            home: const LayoutScreen(),
           );
         });
   }
