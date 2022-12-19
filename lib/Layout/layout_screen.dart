@@ -27,7 +27,7 @@ class LayoutScreen extends StatelessWidget {
             body: const MainScreen(),
             bottomNavigationBar: Padding(
               padding: EdgeInsets.only(
-                  left: 25.w, right: 25.w, top: 12.h, bottom: 40.h),
+                  left: 25.w, right: 25.w, top: 12.h, bottom: 30.h),
               child: Container(
                 width: MediaQuery.of(context).size.width / 2,
                 height: MediaQuery.of(context).size.height / 10,
