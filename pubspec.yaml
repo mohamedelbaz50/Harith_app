@@ -68,6 +68,7 @@ flutter:
     - assets/images/login_methods/
     - assets/images/
     - assets/images/nav_bar/
+    - assets/images/gifts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

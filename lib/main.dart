@@ -5,6 +5,9 @@ import 'package:harith_app/Features/Auth/Presentation/Pages/Login_Screen/login_s
 import 'package:harith_app/Features/Auth/Presentation/Pages/Splash_screen/splash_screen.dart';
 import 'package:harith_app/Features/Auth/Presentation/Pages/Welcome_in_Harith_screen/welcome_in_harith_screen.dart';
 
+import 'Features/Auth/Presentation/Pages/Register_Screen/register_screen.dart';
+import 'Features/Gifts_and_compliments/Presentation/pages/event_info_screen.dart';
+import 'Features/Gifts_and_compliments/Presentation/pages/personal_info_screen.dart';
 import 'Layout/layout_screen.dart';
 
 void main() {
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
                   textDirection: TextDirection.rtl, child: child!);
             },
             theme: lightTheme,
-            home: const LayoutScreen(),
+            home: PersonalInfoScreen(),
           );
         });
   }

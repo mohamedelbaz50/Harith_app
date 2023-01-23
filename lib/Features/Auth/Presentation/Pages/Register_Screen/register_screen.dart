@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:harith_app/Features/Auth/Presentation/Pages/Login_Screen/login_screen.dart';
 
 import '../../Widgets/build_login_method.dart';
-import '../../Widgets/default_button.dart';
+import '../../../../../Core/Shared_Widgets/default_button.dart';
 import '../../Widgets/default_form_field.dart';
-import '../../Widgets/navigate_methods.dart';
+import '../../../../../Core/Shared_Widgets/navigate_methods.dart';
 
 class RegisterScreen extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
@@ -99,7 +99,7 @@ class RegisterScreen extends StatelessWidget {
               defaultButton(
                   context: context,
                   width: width,
-                  height: height / 16,
+                  height: height,
                   onPressed: () {},
                   color: Theme.of(context).primaryColor,
                   text: "تسجيل الان"),

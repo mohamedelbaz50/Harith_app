@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:harith_app/Features/Auth/Presentation/Pages/Register_Screen/register_screen.dart';
 import 'package:harith_app/Features/Auth/Presentation/Widgets/in_welcome_button.dart';
 
-import '../../Widgets/navigate_methods.dart';
+import '../../../../../Core/Shared_Widgets/navigate_methods.dart';
 import '../Login_Screen/login_screen.dart';
 
 class WelcomeInHarithScreeen extends StatelessWidget {

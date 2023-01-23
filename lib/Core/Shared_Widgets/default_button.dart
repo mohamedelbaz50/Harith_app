@@ -9,10 +9,11 @@ Widget defaultButton(
     required Color color,
     required String text}) {
   return Container(
+      margin: EdgeInsets.all(10.w),
       decoration:
           BoxDecoration(borderRadius: BorderRadius.circular(4), color: color),
       width: width,
-      height: height,
+      height: height / 16,
       child: TextButton(
           onPressed: () {
             onPressed();
